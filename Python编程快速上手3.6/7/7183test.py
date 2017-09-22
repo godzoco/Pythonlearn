@@ -10,7 +10,7 @@ def remspace(string):
     bspaceRegex = re.compile(r'\s*$')
     fspaceRegex = re.compile(r'^\s*')
     stringrem = bspaceRegex.sub('', string)
-    print('1222第一个调整去除后面的空\n'+stringrem) 
+    print('2第一个调整去除后面的空\n'+stringrem) 
     stringrem = fspaceRegex.sub('', stringrem)
     return stringrem
 
