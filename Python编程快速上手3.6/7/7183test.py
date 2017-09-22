@@ -10,7 +10,8 @@ def remspace(string):
     bspaceRegex = re.compile(r'\s*$')
     fspaceRegex = re.compile(r'^\s*')
     stringrem = bspaceRegex.sub('', string)
-    print('2第一个调整去除后面的空\n'+stringrem) 
+    print('2第一个调整去除后面的空\n3这个就是用没有字符把空字符串代替了\n'
+          '4也就是先结尾用空的‘’代替，再头用‘’代替\n'+stringrem) 
     stringrem = fspaceRegex.sub('', stringrem)
     return stringrem
 
