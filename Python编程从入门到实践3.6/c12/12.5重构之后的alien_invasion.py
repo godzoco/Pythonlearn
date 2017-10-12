@@ -1,8 +1,11 @@
 import sys
 import pygame
 
+background_image_filename = "images/background.jpg"  
+
+
 #最新的ship文件是重构的3个实参，现在用2个 所以直接使用了ship1241的类Ship1241
-from settings import Settings
+from settings126 import Settings126
 from ship1241 import Ship1241
 
 import game_functions125 as gf
@@ -12,7 +15,7 @@ def run_game():
     pygame.init()
     #初始化init 初始化背景
     
-    ai_settings = Settings()
+    ai_settings = Settings126()
     screen = pygame.display.set_mode(
      (ai_settings.screen_width,
      ai_settings.screen_height)                                   
