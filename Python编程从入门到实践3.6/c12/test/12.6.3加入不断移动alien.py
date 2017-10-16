@@ -1,13 +1,14 @@
 import sys
 import pygame
 
+background_image_filename = "images/background.jpg"  
 
 
 #最新的ship文件是重构的3个实参，现在用2个 所以直接使用了ship1241的类Ship1241
 from settings126 import Settings126
-from ship1262 import Ship1262
+from ship1263 import Ship1263
 
-import game_functions1262 as gf
+import game_functions1263 as gf
 
 def run_game():
 # 初始化游戏并创建一个屏幕对象
@@ -28,7 +29,7 @@ def run_game():
     pygame.display.set_caption("爆炸打大佬")
     
     #新加入的
-    ship = Ship1262(screen)
+    ship = Ship1263(screen)
     
     # 设置背景色
     #bg_color = (230, 230, 230)

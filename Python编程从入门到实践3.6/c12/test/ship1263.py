@@ -1,6 +1,6 @@
 import pygame
 
-class Ship1262():
+class Ship1263():
 
     def __init__(self,screen):
         """初始化飞船且设置启动初始位置"""
@@ -25,13 +25,21 @@ class Ship1262():
        #在pygame 原点在屏幕左上角， 右下角坐标值 慢慢增大 1200*800中 右下角坐标（1200,800）
        
        #移动标志
+       #加入 2个 是左右的移动
         self.moving_right = False
+        
+        self.moving_left = False
     def update(self):
         """根据移动标志 调整飞船的位置"""
         """按住右键 不放 就一直 向右进行移动"""
         #不是一直 按住 就是 按一下走 
         if self.moving_right:
             self.rect.centerx += 1
+            
+            #加入左右移动 一直 
+            #注意 这里是左  移动 就应该 是 -= 了 要注意
+        if self.moving_left:
+            self.rect.centerx -= 1
     def blitme(self):
         """在指定位置绘制船"""
         self.screen.blit(self.image, self.rect)
