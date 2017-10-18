@@ -6,7 +6,7 @@ class Bullet(Sprite):
 
     def __init__(self, ai_settings, screen, ship):
         """在飞船的位置加入子弹"""
-        #super(Bullet, self).__init__() 这个是2.7写法 3.0写法 如下
+        #super(Bullet, self).__init__() 这个是2.7写法  下面 3.0写法 如下
         super().__init__()
         self.screen = screen
     
@@ -39,7 +39,7 @@ class Bullet(Sprite):
         
     def update(self):
         """向上移动子弹."""
-        # 表示子弹位置的小数值. 依次往上走单位值            
+        # 表示子弹位置的小数值. 依次往上走单位值            子弹的射击速度
         self.y -= self.speed_factor
         # 表示 rect 位置. 和飞船的位置一致
         self.rect.y = self.y
@@ -47,3 +47,5 @@ class Bullet(Sprite):
     def draw_bullet(self):
         """屏幕上绘制子弹."""
         pygame.draw.rect(self.screen, self.color, self.rect)
+        
+        #用draw.recct() 使得在self.color中的颜色填充表示rect 占据屏幕的部分

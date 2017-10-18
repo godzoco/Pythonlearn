@@ -11,9 +11,11 @@ def check_keydown_events(event, ai_settings, screen,ship,bullets):
         ship.moving_right = True
     elif event.key == pygame.K_LEFT:
         ship.moving_left = True
-        
+    elif event.key == pygame.K_SPACE:    
+        fire_bullet(ai_settings, screen,ship,bullets)
+def fire_bullet(ai_settings, screen,ship,bullets):       
         #加入空格键功能 开火 按了空格键，新建一个子弹 ，然后add 增加到bullets 这个编组里面
-    elif event.key == pygame.K_SPACE:
+    if len(bullets)<ai_settings.bullets_allowed:
         #创建一个子弹 ，加入编组 bullets中
         new_bullet =Bullet(ai_settings, screen,ship)
         bullets.add(new_bullet)
@@ -44,3 +46,10 @@ def update_screen(ai_settings, screen, ship,bullets):
         bullet.draw_bullet()
     ship.blitme()
     pygame.display.flip()
+    
+def update_bullets(bullets):
+    bullets.update()
+        #加入函数 删除  已经出去屏幕的 子弹
+    for bullet in bullets.copy():
+        if bullet.rect.bottom <=0:
+            bullets.remove(bullet)

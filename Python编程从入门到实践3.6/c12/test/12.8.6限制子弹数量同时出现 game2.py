@@ -14,9 +14,10 @@ def check_keydown_events(event, ai_settings, screen,ship,bullets):
         
         #加入空格键功能 开火 按了空格键，新建一个子弹 ，然后add 增加到bullets 这个编组里面
     elif event.key == pygame.K_SPACE:
+        if len(bullets)<ai_settings.bullets_allowed:
         #创建一个子弹 ，加入编组 bullets中
-        new_bullet =Bullet(ai_settings, screen,ship)
-        bullets.add(new_bullet)
+            new_bullet =Bullet(ai_settings, screen,ship)
+            bullets.add(new_bullet)
         
 def check_keyup_events(event, ship):
     """Respond to key releases."""
