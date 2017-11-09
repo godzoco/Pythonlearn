@@ -1,0 +1,10 @@
+sfile=open('e:\\s29.txt')
+a=sfile.readlines()
+print(a)
+
+bfile=open('e:\\s30.txt','w')
+b=bfile.write('hello!\n')
+print(b)
+bfile.close()
+bfile=open('e:\\s30.txt','a')
+a=bfile.write('Bacon')
