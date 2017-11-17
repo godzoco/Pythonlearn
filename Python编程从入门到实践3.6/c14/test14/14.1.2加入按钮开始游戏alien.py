@@ -8,7 +8,7 @@ from pygame.sprite import Group
 from settings1362 import Settings1362
 from ship1265 import Ship1265
 
-import game_functions1411 as gf
+import game_functions1413 as gf
 
 from alien1341 import Alien1341
 from game_stats1411 import GameStats
@@ -52,7 +52,7 @@ def run_game():
 # 开始游戏的主循环
     #游戏所以的事件,鼠标键盘的运动 移动 都是事件 找到这些事件 ，就是执行
     while True:
-        gf.check_events(ai_settings, screen, ship,bullets)
+        gf.check_events(ai_settings, screen, stats,play_button,ship,bullets)
         #1262不断右一直移动 就是加入这个ship.update
         if stats.game_active:
             ship.update()

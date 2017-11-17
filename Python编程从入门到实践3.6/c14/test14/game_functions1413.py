@@ -45,7 +45,7 @@ def check_events(ai_settings, screen,stats,play_button,ship,bullets):
             check_play_button(stats,play_button,mouse_x,mouse_y)
 def check_play_button(stats,play_button,mouse_x,mouse_y):
     "点击开始play按钮开始游戏"
-    if play_button.rect.colldepoint(mouse_x,mouse_y):
+    if play_button.rect.collidepoint(mouse_x,mouse_y):
         stats.game_active = True
                 
 def ship_hit(ai_settings, stats,screen, ship,aliens,bullets):
