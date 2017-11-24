@@ -1,4 +1,4 @@
-class Settings1362():
+class Settings1421():
     """A class to store all settings for Alien Invasion."""
 
     def __init__(self):
@@ -28,5 +28,24 @@ class Settings1362():
         self.fleet_drop_speed = 10
         #设置向 右移动 为1
         self.fleet_direction = 1
+        
+        #1421加入修改速度
+        self.speedup_scale = 11.1
+        self.initialize_dynamic_settings()
+        
+    def initialize_dynamic_settings(self):
+        self.ship_speed_factor = 1.5
+        self.bullet_speed_factor =  3
+        self.alien_speed_factor =1
+                    
+        #向右的速度  1为向右
+        self.fleet_direction = 1
+        
+    def increase_speed(self):
+        self.ship_speed_factor *=self.speedup_scale
+        self.bullet_speed_factor *=self.speedup_scale
+        self.alien_speed_factor *=self.speedup_scale
+        
+        
         
 
