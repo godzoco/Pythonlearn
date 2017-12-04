@@ -13,7 +13,7 @@ class Scoreboard():
         #显示得分信息使用的字体设置
         
         self.text_color = (30,30,30)
-        self.font= pygame.font.SysFont(none,48)
+        self.font= pygame.font.SysFont(None,48)
      
      #准备初始的图像
         self.prep_score()
@@ -31,7 +31,13 @@ class Scoreboard():
         self.score_rect.right = self.screen_rect.right - 20
         self.score_rect.top = 20
         
-        #在
+        #在prep_score() 把sstats.score 变成字符串 传给 创建图像的render
+        
+        #用一个rect 在屏幕右边相聚20像素 锚定在屏幕右边  创建方法show_score()用于渲染好的 得分图像
+        
+    def show_score(self):
+        '''屏幕显示得分'''
+        self.screen.blit(self.score_imge,self.score_rect)
         
         
         
