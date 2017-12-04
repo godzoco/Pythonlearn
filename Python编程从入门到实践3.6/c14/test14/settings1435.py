@@ -1,4 +1,4 @@
-class Settings1433():
+class Settings1435():
     """A class to store all settings for Alien Invasion."""
 
     def __init__(self):
@@ -31,6 +31,10 @@ class Settings1433():
         
         #1421加入修改速度
         self.speedup_scale = 1.1
+        #再加入高难度之后，加高分值
+        self.score_scale = 1.5
+        
+        
         self.initialize_dynamic_settings()
         
     def initialize_dynamic_settings(self):
@@ -45,10 +49,14 @@ class Settings1433():
         self.alien_points = 50
         
     def increase_speed(self):
+        #加高速度和外星人点数
         self.ship_speed_factor *=self.speedup_scale
         self.bullet_speed_factor *=self.speedup_scale
         self.alien_speed_factor *=self.speedup_scale
         
+        self.alien_points=int(self.alien_points * self.score_scale)
         
+        print(self.alien_points)
+     
         
 
