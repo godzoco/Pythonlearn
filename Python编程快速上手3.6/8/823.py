@@ -1,5 +1,10 @@
-sfile=open('e:\\s29.txt')
+sfile=open('e:\\s29.txt','w')
+
+sfile.write('hello1!!!')
+sfile=open('e:\\s29.txt','r')
 a=sfile.readlines()
+
+#变成列表
 print(a)
 
 bfile=open('e:\\s30.txt','w')
