@@ -12,6 +12,8 @@ s1=open('s19.txt','w')
 sfile=open('e:\\s29.txt','w')
 
 sfile.write('hello!!!')
+sfile.close()
+#感谢刘嗣林的close  提醒
 
 #新建文件夹s 这是BUG写法
 #这里有一个BUG FileExistsError: [WinError 183] 当文件已存在时，无法创建该文件。: 's'
