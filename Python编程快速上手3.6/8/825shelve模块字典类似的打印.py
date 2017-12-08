@@ -9,6 +9,7 @@ print(type(sfile))
 
 print(sfile['cats'])
 
+
 print(list(sfile.keys()))
 print(list(sfile.values()))
 

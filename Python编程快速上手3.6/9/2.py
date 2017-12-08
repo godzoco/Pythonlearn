@@ -1,1 +1,0 @@
-sfile=open('e:\\s29.txt','w')
