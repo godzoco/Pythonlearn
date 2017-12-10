@@ -5,11 +5,11 @@
 
 import shutil,os
 #进入工作目录 E盘根目录
-os.chdir('e:\\')
+os.chdir('d:\\')
 
 #新建文件s29.txt
 s1=open('s19.txt','w')
-sfile=open('e:\\s29.txt','w')
+sfile=open('d:\\s29.txt','w')
 
 sfile.write('hello!!!')
 sfile.close()
@@ -21,6 +21,9 @@ sfile.close()
 a='s'
 os.mkdir(a)
 '''
+
+
+
 #新建文件夹s 这是有s了 就跳过
 a='s'
 try:
@@ -31,9 +34,9 @@ except OSError:
 
 #文件夹存在就不运行了
 #拷贝S29到S里面
-shutil.copy('e:\\s29.txt','e:\\s')
+shutil.copy('d:\\s29.txt','d:\\s')
 #这样调用了 新的位置 修改了名字
-shutil.copy('e:\\s29.txt','e:\\s\\s30.txt')
+shutil.copy('d:\\s29.txt','d:\\s\\s30.txt')
 
 
 
