@@ -14,6 +14,12 @@ ex.extractall()
 
 #然后用extract()传递字符串  得到解压缩出来的文件
 ex.extract('n/sp.txt','e:\\2')
+
+#如果这样写就是n下面   E:\2\n\sp.txt 到了 2里面 在2里面建了n文件夹
+
+
+
+
 #这里extrac() 半天没弄好 这个直接 不要用这个close就好了
 #ex.close()
 
