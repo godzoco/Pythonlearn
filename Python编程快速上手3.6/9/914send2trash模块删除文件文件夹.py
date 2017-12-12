@@ -1,5 +1,5 @@
 
-
+#这里一定要 pip install send2trash
 import send2trash,os
 os.chdir('d:\\')
 

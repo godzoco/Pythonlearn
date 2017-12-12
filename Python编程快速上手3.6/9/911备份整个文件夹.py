@@ -1,7 +1,7 @@
 
 
 import shutil,os
-os.chdir('d:\\')
+os.chdir('e:\\')
 
 #新建文件夹 在工作目录下的这个S1
 
@@ -9,7 +9,7 @@ try:
     os.mkdir('s1')
 except OSError:
     pass
-sfile=open('d:\\s1\\s291.txt','w')
+sfile=open('e:\\s1\\s291.txt','w')
 
 sfile.write('hello!!!')
 sfile.close()
