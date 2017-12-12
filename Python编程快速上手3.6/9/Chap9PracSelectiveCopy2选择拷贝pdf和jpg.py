@@ -3,6 +3,7 @@
 import os
 import shutil
 
+#os.chdir('e:\\')
 def selectiveCopy(folder):
     folder = os.path.abspath(folder)
     for foldername, subfolders, filenames in os.walk(folder):
@@ -10,7 +11,12 @@ def selectiveCopy(folder):
             if not filename.endswith('.pdf'):
                 continue
             print(filename)
-            shutil.copy(filename, 'e:\\2') 
+            #感谢刘工　刘嗣林
+            a=os.path.join(foldername, filename)
+            shutil.copy(a,'e:\\') 
+            #如果shutil.copy(a,'e:\\２')
+            #没有２这个文件夹，就ＰＤＦ复制到Ｅ盘然后改名字叫２
+            
             #Commented out to protect against accidental copying
             print('Copying ' + filename + '...') #Print only to verify working correctly
 
