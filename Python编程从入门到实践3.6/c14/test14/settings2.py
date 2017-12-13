@@ -21,14 +21,13 @@ class Settings2():
         self.bullet_color = 250, 0, 0
         
         #这个限制同时出现3个子弹
-        self.bullets_allowed = 3
+        self.bullets_allowed = 30
         
         #外星人人设置
-        self.alien_speed_factor = 1
+        self.alien_speed_factor = 10
         self.fleet_drop_speed = 10
         #设置向 右移动 为1
-        self.fleet_direction = 1
-        
+        self.fleet_direction = 10
         #1421加入修改速度
         self.speedup_scale = 1.1
         #再加入高难度之后，加高分值
