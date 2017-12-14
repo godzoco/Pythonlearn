@@ -6,16 +6,16 @@ import random
 
 guess = ''
 while guess not in (int(1), int(0)): #Changed heads and tails to 1 and 0 and made integers
-    print('Guess the coin toss! Enter 1 for heads or 0 for tails:') #Added 1 and 0
+    print('猜硬币，0或者1:') #Added 1 and 0
     guess = int(input()) #Turned string into integer
 
 toss  = random.randint(0, 1) # 0 is tails, 1 is heads
 if toss == guess:
     print('你赢了!')
 else:
-    print('Nope! Guess again!')
+    print('错了，再猜!')
     guess = int(input()) #guess misspelled with three 's' instead of two and made guess integer
     if toss == guess:
-        print('You got it!')
+        print('你赢了!')
     else:
-        print('Nope. You are really bad at this game.')
+        print('错了，表现糟糕.')
