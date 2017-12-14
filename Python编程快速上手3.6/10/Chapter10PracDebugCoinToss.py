@@ -11,7 +11,7 @@ while guess not in (int(1), int(0)): #Changed heads and tails to 1 and 0 and mad
 
 toss  = random.randint(0, 1) # 0 is tails, 1 is heads
 if toss == guess:
-    print('You got it!')
+    print('你赢了!')
 else:
     print('Nope! Guess again!')
     guess = int(input()) #guess misspelled with three 's' instead of two and made guess integer
