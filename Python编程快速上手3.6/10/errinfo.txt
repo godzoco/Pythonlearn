@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "E:\Pythonlearn\Python编程快速上手3.6\10\102反向跟踪字符串.py", line 5, in <module>
+    raise Exception('这是个错误信息')
+Exception: 这是个错误信息
