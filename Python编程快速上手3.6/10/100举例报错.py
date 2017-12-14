@@ -10,3 +10,5 @@ raise Exception('这个是错误信息')
 
 #一般 raise在函数中 Try和except 在调用 该函数的 代码中
 
+####
+
