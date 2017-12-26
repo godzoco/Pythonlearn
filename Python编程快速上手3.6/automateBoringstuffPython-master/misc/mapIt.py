@@ -1,6 +1,6 @@
 #!python
 
-# Chapter 11 Example
+# Chapter 11下载网页内容 Example
 # mapIT.py - Launches a map in the browser using an address from the command
 # line or clipboard.
 

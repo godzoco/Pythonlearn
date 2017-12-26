@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#Chapter 11 Practice
+#Chapter 11下载网页内容 Practice
 #Image Site Downloader - Downloads images in an Imgur catagory
 #Change URL variable to the Imgur catagory link
 

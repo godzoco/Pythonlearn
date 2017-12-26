@@ -2,3 +2,4 @@
 
 import webbrowser
 webbrowser.open('https://www.baidu.com')
+webbrowser.open('https://www.sina.com.cn')

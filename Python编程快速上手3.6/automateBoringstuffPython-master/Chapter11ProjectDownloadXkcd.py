@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-#Chapter 11 Project
+#Chapter 11下载网页内容 Project
 #XKCD Comic Download - Downloads every XKCD comic
 
 import requests
