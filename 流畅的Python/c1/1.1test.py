@@ -28,3 +28,6 @@ print(deck[0])
 print(deck[1])
 print(deck[:3])
 print(deck[12::13])
+
+for a in deck:
+    print(a)
