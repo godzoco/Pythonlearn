@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import difflib
 
-text1 = """text1:
+text1 = """text1: 
 This module provides classes and functions for comparing sequences.
 including HTML and context and unified diffs.
 difflib document v7.4
