@@ -5,7 +5,7 @@ class Settings2():
         """Initialize the game's settings."""
         # Screen settings.
         self.screen_width = 1200
-        self.screen_height = 800
+        self.screen_height = 720
         self.bg_color = (0,206,209)
         #背景色  青色
         # Ship settings.
