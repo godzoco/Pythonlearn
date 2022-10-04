@@ -29,7 +29,7 @@ with tarfile.open('example.tar', 'r') as t:
             if not is_within_directory(path, member_path):
                 raise Exception("Attempted Path Traversal in Tar File")
     
-        tar.extractall(path, members, numeric_owner) 
+        tar.extractall(path, members, numeric_owner=numeric_owner) 
         
     
     safe_extract(t, "outdir", members=[t.getmember("README.txt")])
